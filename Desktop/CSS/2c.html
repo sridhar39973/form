@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buttons</title>
+  <style>
+    button {
+      display: block;
+      margin-bottom: 50px;
+      cursor: pointer;
+    }
+
+    .single-line {
+      display: inline;
+      margin-right: 8px;
+    }
+
+    div > button {
+      display: inline;
+      margin-right: 8px;
+    }
+
+    #uber-button {
+      width: 120px;
+      height: 38px;
+      background-color: black;
+      color: white;
+      border-style: none;
+      transition: opacity 0.15s;
+    }
+
+    #uber-button:active {
+      opacity: 0.7;
+    }
+
+    #amazon-button {
+      width: 160px;
+      height: 36px;
+      border-radius: 18px;
+      background-color: rgb(255, 216, 20);
+      border-style: none;
+      font-weight: bold;
+    }
+
+    #amazon-button:hover {
+      background-color: rgb(247, 202, 50);
+    }
+
+    #github-button {
+      width: 100px;
+      height: 36px;
+      background-color: rgb(46, 164, 79);
+      color: white;
+      font-weight: bold;
+      border-style: none;
+      border-radius: 8px;
+    }
+
+    #github-button:hover {
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.20);
+    }
+
+    #bootstrap-button {
+      background-color: rgb(121, 82, 179);
+      width: 120px;
+      height: 36px;
+      border-radius: 2px;
+      border-style: none;
+      color: white;
+      font-weight: bold;
+      transition: opacity 0.20s;
+    }
+
+    #bootstrap-button:hover {
+      opacity: 0.8;
+    }
+
+    #download-button {
+      color: rgb(108, 117, 125);
+      width: 120px;
+      height: 36px;
+      font-weight: bold;
+      border: 1px solid rgb(121, 82, 179);
+      border-radius: 4px;
+      transition: background-color, color 0.15s;
+    }
+
+    #download-button:hover {
+      background-color: rgb(108, 117, 125);
+      color: white;
+    }
+
+    #linkedin-button {
+      width: 100px;
+      height: 36px;
+      color: white;
+      background-color: rgb(10, 102, 194);
+      border-style: none;
+      border-radius: 16px;
+      font-weight: bold;
+      transition: background-color 0.15s;
+    }
+
+    #linkedin-button:hover {
+      background-color: blue;
+    }
+
+    #save-button {
+      width: 80px;
+      height: 36px;
+      border-radius: 16px;
+      border: 1px solid rgb(10, 102, 194);
+      color: rgb(10, 102, 194);
+      font-weight: bold;
+      font-size: 16px;
+      transition: background-color, border-width 0.15s;
+    }
+
+    #save-button:hover {
+      border-width: 3px;
+      background-color: rgb(225, 235, 247);
+    }
+  </style>
+</head>
+<body>
+  <button id="uber-button">Request now</button>
+  <button id="amazon-button">Add to Cart</button>
+  <button id="github-button">Sign up</button>
+  <button id="bootstrap-button" class="single-line">Get started</button>
+  <button id="download-button" class="single-line">Download</button>
+  <div class="ln">
+    <button id="linkedin-button">Easy apply</button>
+    <button id="save-button" class="single-line-2">Save</button>
+  </div>
+</body>
+</html>
